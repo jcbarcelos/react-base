@@ -1,17 +1,27 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { primaryColor, primaryDarkColor } from "../config/colors";
+import {
+  primaryColor,
+  primaryDarkColor,
+  defaultDarkColor,
+  errorDarkColor,
+  successDarkColor,
+  errorBackgroundDarkColor,
+  infoBackgroundDarkColor,
+  warningBackgroundDarkColor,
+  seccessBackgroundDarkColor
+} from "../config/colors";
 
 export default createGlobalStyle`
   * {
     font-family: Roboto sans-serif;
     font-size: 14px;
-    margin: 0px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
   }
   body {
-    color:  ${primaryDarkColor};
+    color:  ${primaryColor};
     background: ${primaryDarkColor};
   }
   html, body, #root {
@@ -27,18 +37,40 @@ export default createGlobalStyle`
   }
   a {
     text-decoration: none;
-    color: ${primaryColor}}
+    color: ${primaryColor}
   }
   ul {
     list-style: none;
   }
+  /** configuraçõe de cores para o toastify */
+  /* body .Toastify .Toastify__toast-container .Toastify__toast--success {
+    background: ${seccessBackgroundDarkColor};
+    color: ${defaultDarkColor}
+  }
+  body .Toastify .Toastify__toast-container .Toastify__toast--error {
+    background: ${errorBackgroundDarkColor};
+    color: ${errorDarkColor}
+  }
+  body .Toastify .Toastify__toast-container .Toastify__toast--info {
+    background: ${infoBackgroundDarkColor};
+    color: ${defaultDarkColor}
+  }
+  body .Toastify .Toastify__toast-container .Toastify__toast--warn {
+    background: ${warningBackgroundDarkColor};
+    color: ${defaultDarkColor}
+  }
+  body .Toastify__toast-icon .Toastify--animate-icon .Toastify__zoom-enter{
+    background: "#fff";
+    color: "#fff";
+  } */
 `;
 
 export const Container = styled.section`
   max-width: 360px;
   background: #fff;
-  margin: 0px auto;
+  margin: 10px;
   border-radius: 8px;
+  justify-content: center;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
