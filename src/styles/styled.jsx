@@ -4,7 +4,6 @@ import {
   primaryDarkColor,
   defaultDarkColor,
   errorDarkColor,
-  successDarkColor,
   errorBackgroundDarkColor,
   infoBackgroundDarkColor,
   warningBackgroundDarkColor,
