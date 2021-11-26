@@ -5,7 +5,7 @@ import { FaHome, FaSignInAlt, FaUserAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 const Index = () => {
-  const botaoCliclado = useSelector((state) => state.exmple.botaoClicado);
+  const botaoCliclado = useSelector((state) => state.example.botaoClicado);
   return (
     <Nav>
       <Home>
